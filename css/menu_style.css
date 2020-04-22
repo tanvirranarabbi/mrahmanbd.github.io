@@ -1,0 +1,143 @@
+*{margin:0; padding:0;}
+#primarymenu li {float: left; position: relative;z-index: 1;}
+body {background: #322448; font-family: arial; font-size:15px; line-height: 25px;}
+#primarymenu li a {color:#222; font-weight: bold;padding: 20px 30px; display:block; text-decoration: none;}
+#primarymenu{list-style: none; }
+
+
+#primarymenu li {float: left; position: relative;}
+body {font-family: arial; font-size:15px; line-height: 25px;}
+#primarymenu li a {color:#222; font-weight: bold;padding: 20px 30px; display:block; text-decoration: none;}
+#primarymenu{list-style: none; }
+#primarymenu li a:hover{background: #00374c; color: #fff;} 
+nav#mainNav {
+
+width:100%;
+
+background: #f1f1f1;
+
+border-bottom: 2px solid orange;
+
+display: table;
+}
+.displaysize {width: 1170;margin: auto;/* overflow: hidden; */}
+#logo {width: 67px;float: left;height: 67px;}
+img {width: 100%; margin-bottom: -46px;}
+#menuContainer {float:right; width: 750px;}
+
+#sub_menu {
+	list-style: none;
+	background: #c1c4d2;
+	position: absolute;
+	top: 67px;
+	left: 0px;
+	color: white;
+	transform: scaleY(0);
+	padding: 10px;
+	transition: all 0.5s;
+	opacity: 0;
+	width: 280px;
+	transform-origin: top;
+	float: none;
+}
+#sub_menu li {float: none;}
+#primarymenu li:hover #sub_menu{transform: scaleY(1); opacity: 1;}
+
+#sub_menu li a {transition: all 1s;}
+#sub_menu li:hover a {padding-left: 50px;  background: #00374c; }
+#name h1 {width:150px;height: 67px;float: left;left: 105px;display: inline-block;text-align: center;/* top: -52px; */position: absolute;top: 18px; color: #392854;    font-family: serif;}
+h2 {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+div#contents {display: inline;
+    margin-left: 80px;}
+
+    iframe {
+    margin-left: 100px;
+}
+div#footer {
+    font-size: small;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    }
+
+
+
+    /* Slider
+http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
+*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.slider_container{width:100%;margin:auto;clear:both
+;}
+.flex-caption{ position: absolute; right:11px; bottom:20px;}
+.caption_title_line.caption_title_line.caption_title_line.caption_title_line {
+    width: 450px;
+    height: 190px;
+    padding: 5px 15px 10px 15px;
+    /* background: url(images/slider_caption_bg.png) repeat; */
+    color: #f1f1f1;
+    background: #06598430;
+}
+.flex-caption h2.flex-caption h2 {
+    color: #e4e2e2;
+    font-size: 20px;
+    padding: 5px 0 5px 0;
+    margin: 0px;
+    font-family: 'Ovo', serif;
+}
+
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0; padding: 0 0 30px 0;background:url(images/shadow_bottom.png) no-repeat center bottom;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%;display: block;width: 100%;height: 550px;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider {position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flex-container {zoom: 1; position: relative;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:11px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:184px;}
+.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:141px;}
+.flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
+.flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
+.flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+.slider_container{width: 100%;/* margin:0 0 0 2%; */clear:both;background:none;}
+.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
+.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
+.flex-caption { display:none;}
+}p {
+    margin: 34px;
+}}

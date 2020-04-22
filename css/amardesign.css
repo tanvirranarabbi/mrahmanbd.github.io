@@ -1,0 +1,44 @@
+
+body {background-image:url(blkbg.jpg); 
+margin: 0px;
+padding: 0px;
+font-family: unset;
+}
+
+
+.allblocks{ 
+	
+width:300px;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.allblocks h1{
+float:left;
+font-size: 40px;
+border-bottom: 4px solid #41a545;
+margin-bottom: 50px;
+padding-bottom: 12px;
+width: 50%
+
+}
+
+.box {
+border-bottom: 1px solid #41a545;
+padding-bottom: 8px;
+margin-bottom: 8px;
+width:80%;
+overflow: hidden;
+font-size: 20px;
+
+}
+
+.btn:hover {color:red;
+
+border-radius: 3px;
+
+}
+
